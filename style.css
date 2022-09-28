@@ -1,10 +1,16 @@
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+
+    background: linear-gradient(180deg, rgba(0, 144, 240, 0) 88%, rgba(152, 172, 226, 0.425));
+
+    min-height: 100vh;
 }
+
 .page {
     width: 1000px;
-    margin: 65px auto 0;
+    margin: 0 auto;
+    padding-top: 65px;
 }
 
 nav {
@@ -13,6 +19,10 @@ nav {
     align-items: center;
 
     margin-bottom: 55px;
+}
+
+nav img {
+    width: 100px;
 }
 
 ul {
@@ -28,13 +38,24 @@ a{
     text-decoration: none;
 }
 
+ul li a {
+    opacity: 0.5;
+}
+
 /*pseudo-class*/
 ul li a:hover {
     font-weight: bold;
+    opacity: 1;
 }    
 
 h1, ul {
     font-family: 'Mulish', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 h1 {
@@ -51,22 +72,57 @@ h1 span {
     font-weight: bold;
 }
 
-p {
+section p {
     font-size: 14px;
     line-height: 28px;
     color: #7D7987;
+
+    margin: 40px 0;
 }
 
 button{
+    color: white;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
+
+    background: #f67d48;
+    border: 0;
+    border-radius: 4%;
+    padding: 14px 32px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3e5db7;
 }
 
 footer {
     font-size: 14px;
     line-height: 28px;
+    color: #7D7987;
+    font-weight: bold;
+
+    text-align: center;
+
+    margin-top: 80px;
 }
 
 footer a {
     font-weight: bold;
+}
+
+#picture {
+    width: 800px;
+}
+
+#balls {
+    position: fixed;
+    bottom: 0;
+    right: 0%;
 }
